@@ -1,0 +1,105 @@
+{
+    "templates": {
+        "icon-service-card": {
+            "type": "container",
+            "direction": "vertical",
+            "height": {
+                "type": "match_parent"
+            },
+            "background": [
+                {
+                    "type": "gradient",
+                    "colors": [
+                        "#F6F4FA",
+                        "#F0EBF8"
+                    ],
+                    "angle": 270
+                }
+            ],
+            "border": {
+                "corner_radius": 15,
+                "stroke": {
+                    "color": "#F7F7FA",
+                    "width": 1
+                }
+            },
+            "paddings": {
+                "left": 16,
+                "right": 16,
+                "top": 16,
+                "bottom": 16
+            },
+            "items": [
+                {
+                    "type": "image",
+                    "width": {
+                        "type": "fixed",
+                        "value": "40",
+                        "unit": "dp"
+                    },
+                    "height": {
+                        "type": "fixed",
+                        "value": "40",
+                        "unit": "dp"
+                    },
+                    "$image_url": "image_url",
+                    "margins": {
+                        "bottom": 12
+                    }
+                },
+                {
+                    "type": "text",
+                    "font_size": 16,
+                    "$text": "title"
+                }
+            ]
+        }
+    },
+    "card": {
+        "log_id": "div_services_card",
+        "states": [
+            {
+                "state_id": 0,
+                "div": {
+                    "type": "container",
+                    "orientation": "vertical",
+                    "paddings": {
+                        "left": 16,
+                        "right": 16,
+                        "top": 16,
+                        "bottom": 16
+                    },
+                    "width": {
+                        "type": "match_parent"
+                    },
+                    "items": [
+                        {
+                            "type": "container",
+                            "orientation": "horizontal",
+                            "items": [
+                                {
+                                    "type": "icon-service-card",
+                                    "title": "Больничный без больничного",
+                                    "image_url": "https://i.ibb.co/j5tCyyW/card-3.png"
+                                },
+                                {
+                                    "type": "container",
+                                    "width": {
+                                        "type": "fixed",
+                                        "value": 12,
+                                        "unit": "dp"
+                                    }
+                                },
+                                {
+                                    "type": "icon-service-card",
+                                    "title": "Сервис 1",
+                                    "image_url": "https://i.ibb.co/j5tCyyW/card-3.png"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,6 @@
+example:
+  - hello:
+services:
+  - services:
+  - posts:
+  - patchPosts:
